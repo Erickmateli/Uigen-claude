@@ -1,0 +1,2 @@
+- [Comment usage](feedback_comments.md) — Only comment complex/non-obvious code; skip comments on self-evident logic
+- [Prisma schema location](reference_prisma_schema.md) — Database schema in prisma/schema.prisma; reference for data structure questions

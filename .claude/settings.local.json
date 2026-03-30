@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/erickmateli/Desktop/Others/AI-learning/uigen -maxdepth 3 -type d -not -path */node_modules/* -not -path */.next/*)",
+      "Bash(node -e \"const ai = require\\(''/Users/erickmateli/Desktop/Others/AI-learning/uigen/node_modules/ai''\\); const types = Object.keys\\(ai\\).filter\\(k => k.includes\\(''Tool''\\) || k.includes\\(''Invocation''\\)\\); console.log\\(types\\)\")"
+    ]
+  }
+}
