@@ -14,6 +14,7 @@ import { CodeEditor } from "@/components/editor/CodeEditor";
 import { PreviewFrame } from "@/components/preview/PreviewFrame";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HeaderActions } from "@/components/HeaderActions";
+import Card from "@/components/ui/Card";
 
 interface MainContentProps {
   user?: {
@@ -44,6 +45,17 @@ export function MainContent({ user, project }: MainContentProps) {
                 {/* Chat Header */}
                 <div className="h-14 flex items-center px-6 border-b border-neutral-200/60">
                   <h1 className="text-lg font-semibold text-neutral-900 tracking-tight">React Component Generator</h1>
+                </div>
+
+                <div>
+                  <Card
+                    title="My Card"
+                    description="This is a short description."
+                    image="https://picsum.photos/400/200"
+                    variant="elevated"
+                    footer={<button className="text-blue-500 text-sm">Learn More →</button>}
+                    onClick={() => console.log('Card clicked')}
+                  />
                 </div>
 
                 {/* Chat Content */}
